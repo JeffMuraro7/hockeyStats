@@ -1,0 +1,54 @@
+/* 
+    Created on : 11 sept. 2015, 09:21:38
+    Author     : MURAROJ_INFO
+*/
+
+fieldset {
+    display: block;
+    
+    height: 190px;
+    
+    margin: 10px 10px 0 0;
+}
+
+input {
+    margin: 5px;
+}
+
+input[type=text] {
+    width: auto;
+    
+    display: inline-block;
+    
+    width: 190px;
+    
+    padding: 5px 0 5px 0;
+    
+    border-radius: 5px;
+}
+
+input[type=password] {
+    width: auto;
+    
+    display: inline-block;
+    
+    padding: 5px 0 5px 0;
+    
+    width: 190px;
+    
+    border-radius: 5px;
+}
+
+.myButton {
+    width:auto;
+    padding:5px 0;
+    text-align:center;
+    display: inline-block;
+    float:left;
+    margin:10px 8px 0 5px;
+    border-radius:7px;
+    font-size: 0.85em;
+    width:190px;
+    color:#000;
+    font-family: Arial,sans-serif;
+}

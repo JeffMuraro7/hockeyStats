@@ -1,0 +1,158 @@
+/* 
+    Created on : 11 sept. 2015, 08:35:43
+    Author     : MURAROJ_INFO
+*/
+
+header {
+    position: relative;
+    
+    height: 150px;
+    width: 850px;
+    
+    margin: auto;
+    
+    text-align: center;
+    
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+header img {
+    float: left;
+}
+
+header h1 {
+    font-family: brannboll;
+    font-size: 65pt;
+    line-height: 60px;
+}
+
+#contenu {
+    position: relative;
+    
+    height: 650px;
+    width: 850px;
+    
+    margin: 5px auto;
+    
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+section {
+    position: relative;
+    
+    height: 650px;
+    width: 610px;
+    
+    float: left;
+    
+    border-radius: 10px 0 0 10px;
+    
+    //background-color: red;
+}
+
+#articleIndex {
+    position: absolute;
+    
+    width: 610px;
+    height: 650px;
+    
+    text-align: justify;
+    
+    padding: 10px;
+    
+    border-radius: 10px 0 0 10px;
+}
+
+#articleAPropos {
+    position: absolute;
+    
+    width: 590px;
+    height: 630px;
+    
+    text-align: justify;
+    
+    padding: 10px;
+    
+    border-radius: 10px 0 0 10px;
+    
+    //background-color: red;
+}
+
+#articleInscription {
+    position: absolute;
+    
+    width: 590px;
+    height: 630px;
+    
+    text-align: justify;
+    
+    padding: 10px;
+    
+    border-radius: 10px 0 0 10px;
+    
+    //background-color: red;
+}
+
+aside {
+    position: relative;
+    
+    height: 650px;
+    width: 240px;
+    
+    float: right;
+    
+    border-radius: 0 10px 10px 0 ;
+    
+    //background-color: aqua;
+}
+
+#reseauSociaux {
+    position: relative;
+    
+    top: 365px;
+    
+    height: 64px;
+    width: 240px;
+    
+    border-radius: 0 0 10px 0;
+}
+
+#reseauSociauxInscription {
+    position: relative;
+    
+    top: 585px;
+    
+    height: 64px;
+    width: 240px;
+    
+    border-radius: 0 0 10px 0;
+}
+
+.sociale {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+footer {
+    position: relative;
+    
+    height: 50px;
+    width: 850px;
+    
+    margin: 5px auto;
+    
+    text-align: right;
+    
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+footer h1 {
+    font-family: 'brannboll';
+    
+    font-size: 20pt;
+    
+    line-height: 25px;
+}

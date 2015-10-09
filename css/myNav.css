@@ -1,0 +1,158 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+nav,
+nav ul,
+nav ul li,
+nav ul li a,
+nav #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+nav:after,
+nav > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+nav #menu-button {
+  display: none;
+}
+nav {
+  position: relative;
+    
+  margin: 5px auto;
+    
+  width: 850px;
+  border: 3px solid blue;
+  border-radius: 10px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1;
+  background: #f7f7f7;
+  //box-shadow: 1px 1px 0 #df7002, 2px 2px 0 #df7002, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+nav > ul {
+  background: url('img/bg.png');
+}
+nav > ul > li {
+  float: left;
+}
+nav.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+nav.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+nav.align-right > ul > li {
+  float: right;
+}
+nav > ul > li > a {
+  padding: 20px 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fd8a17;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+nav > ul > li > a:hover,
+nav > ul > li:hover > a,
+nav > ul > li.active > a {
+  color: blue;
+}
+nav #menu-indicator {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 0;
+  width: 0;
+  border: 5px solid transparent;
+  border-bottom-color: blue;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+nav.small-screen {
+  width: 100%;
+}
+nav.small-screen > ul,
+nav.small-screen.align-center > ul {
+  width: 100%;
+  text-align: left;
+}
+nav.small-screen > ul > li,
+nav.small-screen.align-center > ul > li {
+  float: none;
+  display: block;
+  border-top: 1px solid blue;
+}
+nav.small-screen > ul > li > a {
+  padding: 18px 25px;
+}
+nav.small-screen > ul > li:after,
+nav.small-screen > ul > li:before {
+  display: none;
+}
+nav.small-screen #menu-button {
+  display: block;
+  padding: 18px 25px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: blue;
+  background: url('img/bg.png');
+}
+nav.small-screen #menu-button.menu-opened {
+  color: blue;
+}
+nav.small-screen #menu-button:after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 19.5px;
+  display: block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border-top: 2px solid blue;
+  border-bottom: 2px solid blue;
+  width: 18px;
+  height: 3px;
+}
+nav.small-screen #menu-button.menu-opened:after {
+  border-top: 2px solid blue;
+  border-bottom: 2px solid blue;
+}
+nav.small-screen #menu-button:before {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 29.5px;
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: blue;
+}
+nav.small-screen #menu-button.menu-opened:before {
+  background: blue;
+}
+nav.small-screen #menu-indicator {
+  display: none;
+}

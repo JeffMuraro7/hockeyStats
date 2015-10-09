@@ -1,0 +1,99 @@
+/* 
+    Created on : 25 sept. 2015
+    Author     : MURAROJ_INFO
+*/
+
+fieldset {
+    position: absolute;
+    
+    top: 75px;
+    left: 100px;
+    
+    display: block;
+    
+    width: 430px;
+    height: 350px;
+    
+    margin: 10px 10px 0 0;
+}
+
+input {
+    margin: 5px 0 0 5px;
+}
+
+input[type=text] {
+    width: auto;
+    
+    display: inline-block;
+    
+    width: 410px;
+    
+    padding: 5px 0 5px 0;
+    
+    border-radius: 5px;
+}
+
+input[type=email] {
+    width: auto;
+    
+    display: inline-block;
+    
+    width: 410px;;
+    
+    padding: 5px 0 5px 0;
+    
+    border-radius: 5px;
+}
+
+input[type=date] {
+    width: auto;
+    
+    display: inline-block;
+    
+    width: 410px;;
+    
+    padding: 5px 0 5px 0;
+    
+    border-radius: 5px;
+}
+
+select {
+    width: auto;
+    
+    display: inline-block;
+    
+    width: 415px;
+    
+    margin: 5px 0 0 5px;
+    padding: 5px 0 5px 0;
+    
+    border-radius: 5px;
+}
+
+input[type=password] {
+    width: auto;
+    
+    display: inline-block;
+    
+    padding: 5px 0 5px 0;
+    
+    width: 410px;
+    
+    border-radius: 5px;
+    
+    //background-color: red;
+}
+
+.myButton {
+    width:auto;
+    padding:5px 0;
+    text-align:center;
+    display: inline-block;
+    float:left;
+    margin:10px 8px 0 5px;
+    border-radius:7px;
+    font-size: 0.85em;
+    width:200px;
+    color:#000;
+    font-family: Arial,sans-serif;
+}

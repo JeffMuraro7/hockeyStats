@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'brannboll';
+    src: url('../fonts/brannbollfs_personal-webfont.eot');
+    src: url('../fonts/brannbollfs_personal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brannbollfs_personal-webfont.woff2') format('woff2'),
+         url('../fonts/brannbollfs_personal-webfont.woff') format('woff'),
+         url('../fonts/brannbollfs_personal-webfont.ttf') format('truetype'),
+         url('../fonts/brannbollfs_personal-webfont.svg#brannboll_f_personal_use_onRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+article h1 {
+    font-size: 30px;
+}
