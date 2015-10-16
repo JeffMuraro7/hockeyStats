@@ -33,7 +33,7 @@ nav {
   margin: 5px auto;
     
   width: 850px;
-  border: 3px solid blue;
+  border: 3px solid black;
   border-radius: 10px;
   font-family: 'Oswald', sans-serif;
   line-height: 1;
@@ -72,7 +72,7 @@ nav > ul > li > a {
 nav > ul > li > a:hover,
 nav > ul > li:hover > a,
 nav > ul > li.active > a {
-  color: blue;
+  color: black;
 }
 nav #menu-indicator {
   position: absolute;
@@ -116,7 +116,7 @@ nav.small-screen #menu-button {
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  color: blue;
+  color: black;
   background: url('img/bg.png');
 }
 nav.small-screen #menu-button.menu-opened {

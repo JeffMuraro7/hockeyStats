@@ -1,4 +1,6 @@
 <?php
+    include './FunctionPHP/function.php';
+
     $err_connexion = false;
     
     if(isset($_REQUEST['connexion'])) {
@@ -6,6 +8,11 @@
             $err_connexion = true;
         } else {
             $err_connexion = false;
+            
+            $pseudo = $_REQUEST['pseudoConnexion'];
+            $password = $_REQUEST['passwordConnexion'];
+            
+            //loginUser($pseudo, $password);
         }
     }
 ?>
@@ -21,8 +28,6 @@
         <?php 
             if($err_connexion == TRUE){
                 echo '<p class="erreur_form"> Il y a un champ vide!</p>';
-            } else {
-                 echo '<p></p>';
             }
         ?>
         

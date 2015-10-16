@@ -35,7 +35,7 @@
             <aside>
                 
                 <?php
-                    include './include/connexionInclude.php';
+                        include './include/connexionInclude.php';
                 ?>
                 
                 <div id="reseauSociaux">

@@ -81,7 +81,7 @@ and open the template in the editor.
                             <select name="position">
                                 <option value="" disabled selected>Ta position</option>
                                 <option value="attaquant">Attaquant</option>
-                                <option value="défenseur">Défenseur</option>
+                                <option value="defenseur">Défenseur</option>
                             </select>
                             <input type="text" name="pseudo" placeholder="Pseudo" />
                             <input type="password" name="password" placeholder="Mot de passe" /></br>
@@ -89,8 +89,6 @@ and open the template in the editor.
                             <?php 
                                 if($err_form == TRUE){
                                     echo '<p class="erreur_form"> Il y a un champ vide! Veuillez remplir tout les champs!</p>';
-                                } else {
-                                    echo '<p></p>';
                                 }
                             ?>
                             
