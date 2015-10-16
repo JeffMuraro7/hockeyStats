@@ -55,14 +55,16 @@ section {
 #articleIndex {
     position: absolute;
     
-    width: 610px;
-    height: 650px;
+    width: 590px;
+    height: 630px;
     
     text-align: justify;
     
     padding: 10px;
     
     border-radius: 10px 0 0 10px;
+    
+    //background-color: red;
 }
 
 #articleAPropos {
@@ -111,7 +113,7 @@ aside {
 #reseauSociaux {
     position: relative;
     
-    top: 365px;
+    top: 330px;
     
     height: 64px;
     width: 240px;

@@ -13,3 +13,8 @@
 article h1 {
     font-size: 30px;
 }
+
+.erreur_form {
+    color: red;
+    font-weight: bold;
+}

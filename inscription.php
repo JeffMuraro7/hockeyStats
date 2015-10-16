@@ -8,18 +8,27 @@ and open the template in the editor.
 <?php
     include './FunctionPHP/function.php';
     
+    $err_form = false;
+    
     if(isset($_REQUEST['inscription'])) {
-        $prenom = $_REQUEST['prenom'];
-        $nom = $_REQUEST['nom'];
-        $email = $_REQUEST['email'];
-        $birthday = $_REQUEST['birthday'];
-        $equipe = $_REQUEST['team'];
-        $poste = $_REQUEST['position'];
-        $pseudo = $_REQUEST['pseudo'];
-        $password = $_REQUEST['password'];
-        $status = '0';
         
-        insertUser($prenom, $nom, $email, $birthday, $equipe, $poste, $pseudo, $password, $status);
+        if($_REQUEST['prenom']=="" || $_REQUEST['nom']=="" || $_REQUEST['email']=="" || $_REQUEST['birthday']=="" || $_REQUEST['team']=="" || $_REQUEST['position']=="" || $_REQUEST['pseudo']=="" || $_REQUEST['password']=="") {
+            $err_form = true;
+        } else {
+            $err_form = false;
+            
+            $prenom = $_REQUEST['prenom'];
+            $nom = $_REQUEST['nom'];
+            $email = $_REQUEST['email'];
+            $birthday = $_REQUEST['birthday'];
+            $equipe = $_REQUEST['team'];
+            $poste = $_REQUEST['position'];
+            $pseudo = $_REQUEST['pseudo'];
+            $password = $_REQUEST['password'];
+            $status = '0'; 
+            
+            insertUser($prenom, $nom, $email, $birthday, $equipe, $poste, $pseudo, $password, $status);
+        }
     }
 ?>
 
@@ -77,7 +86,15 @@ and open the template in the editor.
                             <input type="text" name="pseudo" placeholder="Pseudo" />
                             <input type="password" name="password" placeholder="Mot de passe" /></br>
                             
-                            <input type="submit" name="inscription" value=" Inscription " class="myButton">
+                            <?php 
+                                if($err_form == TRUE){
+                                    echo '<p class="erreur_form"> Il y a un champ vide! Veuillez remplir tout les champs!</p>';
+                                } else {
+                                    echo '<p></p>';
+                                }
+                            ?>
+                            
+                            <input type="submit" name="inscription" value=" Inscription " onclick="location.href='index.php'" class="myButton">
                             <input type="button" name="annuler" value=" Annuler " onclick="location.href='index.php'" class="myButton">
                         </fieldset>
                     </form>

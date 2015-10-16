@@ -49,17 +49,11 @@ and open the template in the editor.
                 </article>
             </section>
             <aside>
-                <form action="">
-                    <fieldset>
-                        <legend>
-                            <h1>Connexion</h1>
-                        </legend>
-                        <input type="text" name="pseudoConnexion" placeholder="Pseudo" />
-                        <input type="password" name="passwordConnexion" placeholder="Mot de passe" />
-                        <input type="submit" name="connexion" value=" Connexion " class="myButton">
-                        <input type="button" name="inscription" value=" Inscription " onclick="location.href='inscription.php'" class="myButton">
-                    </fieldset>
-                </form>
+                
+                <?php
+                    include './include/connexionInclude.php';
+                ?>
+                
                 <div id="reseauSociaux">
                     <img src="img/facebook64.png" class="sociale" />
                     <img src="img/twitter64.png" class="sociale" />
