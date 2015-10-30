@@ -11,6 +11,7 @@ and open the template in the editor.
     if(!isset($_SESSION['userLog'])) {
         header('location: index.php');
     } 
+    
 ?>
 
 <html>
@@ -26,7 +27,7 @@ and open the template in the editor.
         <link href="./css/myFont.css" rel="stylesheet" type="text/css"/>
         <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
         <script src="./script.js"></script>
-        <title>Hockey Stats - A propos</title>
+        <title>Hockey Stats - Statistiques</title>
     </head>
     <body>
         

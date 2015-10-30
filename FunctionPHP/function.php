@@ -54,6 +54,8 @@
             $_SESSION['userLog'] = $result['idUser'];
             $_SESSION['idUser'] = $result['idUser'];
             $_SESSION['pseudoUser'] = $result['pseudoUser'];
+            $_SESSION['posteUser'] = $result['posteUser'];
+            $_SESSION['teamUser'] = $result['equipeUser'];
             header( "location: index.php" ); 
         }
     }
