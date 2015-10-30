@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 
 <?php
+    session_start();
+
     include './FunctionPHP/function.php';
     
     $err_form = false;
@@ -29,6 +26,12 @@ and open the template in the editor.
             
             insertUser($prenom, $nom, $email, $birthday, $equipe, $poste, $pseudo, $password, $status);
         }
+    }
+    
+    if(isset($_SESSION['userLog'])) {
+        header('location: index.php');
+    } else {
+        
     }
 ?>
 

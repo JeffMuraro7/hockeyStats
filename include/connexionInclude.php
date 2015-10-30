@@ -12,12 +12,12 @@
             $pseudo = $_REQUEST['pseudoConnexion'];
             $password = $_REQUEST['passwordConnexion'];
             
-            //loginUser($pseudo, $password);
+            loginUser($pseudo, $password);
         }
     }
 ?>
 
-<form action="">
+<form action="" method="post">
     <fieldset>
         <legend>
             <h1>Connexion</h1>

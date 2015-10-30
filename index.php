@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-
+    session_start();
 ?>
 
 <html>
@@ -35,7 +35,11 @@
             <aside>
                 
                 <?php
+                    if(!isset($_SESSION['userLog'])) {
                         include './include/connexionInclude.php';
+                    } else {
+                        include './include/profilInclude.php';
+                    }
                 ?>
                 
                 <div id="reseauSociaux">
