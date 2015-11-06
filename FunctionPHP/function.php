@@ -35,18 +35,20 @@
             $user->bindParam(':poste', $poste, PDO::PARAM_STR);
             $user->bindParam(':pseudo', $pseudo, PDO::PARAM_STR);
             $user->bindParam(':password', $shaPassword, PDO::PARAM_STR);
-            $user->bindParam(':status', $shaPassword, PDO::PARAM_STR);
+            $user->bindParam(':status', $status, PDO::PARAM_STR);
 
             $user->execute();
         }
     }
     
     function loginUser($pseudo, $password) {
-        
+        session_start();
         
         $mdpSHA = sha1($password);
         
-        $connect = getConnection()->prepare("SELECT * FROM users WHERE pseudoUser='$pseudo' AND mdpUser='$mdpSHA'");
+        echo $pseudo . $mdpSHA;
+        
+        $connect = getConnection()->prepare('SELECT * FROM users WHERE pseudoUser = "' . $pseudo . '" AND mdpUser="' . $mdpSHA . '";');
         $connect->execute();
         $result = $connect->fetch(PDO::FETCH_ASSOC);
         
