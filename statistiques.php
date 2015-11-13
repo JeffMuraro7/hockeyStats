@@ -25,6 +25,7 @@ and open the template in the editor.
         <link href="./css/myConnexion.css" rel="stylesheet" type="text/css"/>
         <link href="./css/myNav.css" rel="stylesheet" type="text/css"/>
         <link href="./css/myFont.css" rel="stylesheet" type="text/css"/>
+        <link href="css/myProfil.css" rel="stylesheet" type="text/css"/>
         <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
         <script src="./script.js"></script>
         <title>Hockey Stats - Statistiques</title>
@@ -55,19 +56,10 @@ and open the template in the editor.
             </section>
             <aside>
                 
-                <?php
-                    if(!isset($_SESSION['userLog'])) {
-                        include './include/connexionInclude.php';
-                    } else {
+                <?php  
                         include './include/profilInclude.php';
-                    }
                 ?>
                 
-                <div id="reseauSociaux">
-                    <img src="img/facebook64.png" class="sociale" />
-                    <img src="img/twitter64.png" class="sociale" />
-                    <img src="img/instagram64.png" class="sociale" />
-                </div>
             </aside>
         </div>
         

@@ -64,11 +64,6 @@ and open the template in the editor.
                     }
                 ?>
                 
-                <div id="reseauSociaux">
-                    <img src="img/facebook64.png" class="sociale" />
-                    <img src="img/twitter64.png" class="sociale" />
-                    <img src="img/instagram64.png" class="sociale" />
-                </div>
             </aside>
         </div>
         

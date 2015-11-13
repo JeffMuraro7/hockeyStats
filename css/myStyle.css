@@ -52,6 +52,19 @@ section {
     //background-color: red;
 }
 
+#sectionProfil {
+    position: relative;
+    
+    height: 650px;
+    width: 850px;
+    
+    float: left;
+    
+    border-radius: 10px 10px 10px 10px;
+    
+    //background-color: red;
+}
+
 #articleIndex {
     position: absolute;
     

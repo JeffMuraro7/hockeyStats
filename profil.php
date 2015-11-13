@@ -27,22 +27,12 @@
         ?>
         
         <div id="contenu">
-            <section>
+            <section id="sectionProfil">
                 <article id="articleIndex">
-                    <h1>Bienvenue</h1>
-                    <p>Vous êtes sur HockeyStats le sites spécialisé dans les statistiques personnels de hockey.</p>
+                    <h1>Profil</h1>
+                    
                 </article>
             </section>
-            <aside>
-                
-                <?php
-                    if(!isset($_SESSION['userLog'])) {
-                        include './include/connexionInclude.php';
-                    } else {
-                        include './include/profilInclude.php';
-                    }
-                ?>
-            </aside>
         </div>
         
         <?php

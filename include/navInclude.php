@@ -3,6 +3,7 @@
         <?php
             if(isset($_SESSION['userLog'])) {
                 echo "<li><a href='index.php'>Bienvenue</a></li>
+                      <li><a href='profil.php'>Profil</a></li>
                       <li><a href='statistiques.php'>Statistiques</a></li>
                       <li><a href='./FunctionPHP/deconnexion.php'>Deconnexion</a></li>";
             } else {

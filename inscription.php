@@ -101,13 +101,6 @@
                     </form>
                 </article>
             </section>
-            <aside>
-                <div id="reseauSociauxInscription">
-                    <img src="img/facebook64.png" class="sociale" />
-                    <img src="img/twitter64.png" class="sociale" />
-                    <img src="img/instagram64.png" class="sociale" />
-                </div>
-            </aside>
         </div>
         
         <?php

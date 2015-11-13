@@ -42,8 +42,6 @@
     }
     
     function loginUser($pseudo, $password) {
-        session_start();
-        
         $mdpSHA = sha1($password);
         
         echo $pseudo . $mdpSHA;
