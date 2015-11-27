@@ -1,26 +1,17 @@
 /* 
-    Created on : 27 nov. 2015, 08:10:19
+    Created on : 30 oct. 2015, 11:26:22
     Author     : MURAROJ_INFO
 */
 
 table
-{   
+{
     border-collapse: inherit;
     
-    width: 825px;
+    width: 240px;
 }
-
-caption {
-    width: 825px;
-    
-    text-align: center;
-}
-
 td, th /* Mettre une bordure sur les td ET les th */
 {
     border: 1px solid black;
-    
-    width: 410px;
     
     text-align: center;
 }

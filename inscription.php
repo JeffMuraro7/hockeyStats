@@ -83,8 +83,8 @@
                             </select>
                             <select name="position">
                                 <option value="" disabled selected>Ta position</option>
-                                <option value="attaquant">Attaquant</option>
-                                <option value="defenseur">Défenseur</option>
+                                <option value="Attaquant">Attaquant</option>
+                                <option value="Defenseur">Défenseur</option>
                             </select>
                             <input type="text" name="pseudo" placeholder="Pseudo" />
                             <input type="password" name="password" placeholder="Mot de passe" /></br>

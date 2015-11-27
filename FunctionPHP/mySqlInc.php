@@ -3,5 +3,5 @@
     define("HOST", "localhost");
     define("DBNAME", "hockeystats");
     define("USER", "hockeyStats");
-    define("PASS", "8JNTAJ2LHPRmJBvs");
+    define("PASS", "Super1234");
 ?>

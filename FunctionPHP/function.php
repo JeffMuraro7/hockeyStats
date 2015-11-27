@@ -1,5 +1,4 @@
 <?php
-    //Muraro Jeff
     require_once('mysqLinc.php');
     
     //Fonction pour la connection � la base de donn�es.
@@ -44,8 +43,6 @@
     function loginUser($pseudo, $password) {
         $mdpSHA = sha1($password);
         
-        echo $pseudo . $mdpSHA;
-        
         $connect = getConnection()->prepare('SELECT * FROM users WHERE pseudoUser = "' . $pseudo . '" AND mdpUser="' . $mdpSHA . '";');
         $connect->execute();
         $result = $connect->fetch(PDO::FETCH_ASSOC);
@@ -54,6 +51,9 @@
             $_SESSION['userLog'] = $result['idUser'];
             $_SESSION['idUser'] = $result['idUser'];
             $_SESSION['pseudoUser'] = $result['pseudoUser'];
+            $_SESSION['prenomUser'] = $result['prenomUser'];
+            $_SESSION['nomUser'] = $result['nomUser'];
+            $_SESSION['birthdayUser'] = $result['birthdayUser'];
             $_SESSION['posteUser'] = $result['posteUser'];
             $_SESSION['teamUser'] = $result['equipeUser'];
             header( "location: index.php" ); 

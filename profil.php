@@ -29,7 +29,93 @@
         <div id="contenu">
             <section id="sectionProfil">
                 <article id="articleIndex">
-                    <h1>Profil</h1>
+                    
+                    <table>
+                        <caption>
+                            <h1>Votre profil</h1>
+                        </caption>
+                        <tr>
+                            <td colspan="2">
+                                <?php
+                                    if (isset($_SESSION['pseudoUser'])) {
+                                        echo $_SESSION['pseudoUser'];
+                                    } else {
+                                        echo 'Il y a un problème';
+                                    }
+                                ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Nom</b>
+                            </td>
+                            <td>
+                                <?php
+                                    if (isset($_SESSION['nomUser'])) {
+                                        echo $_SESSION['nomUser'];
+                                    } else {
+                                        echo 'Il y a un problème';
+                                    }
+                                ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Prenom</b>
+                            </td>
+                            <td>
+                                <?php
+                                    if (isset($_SESSION['prenomUser'])) {
+                                        echo $_SESSION['prenomUser'];
+                                    } else {
+                                        echo 'Il y a un problème';
+                                    }
+                                ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Date de naissance</b>
+                            </td>
+                            <td>
+                                <?php
+                                    if (isset($_SESSION['birthdayUser'])) {
+                                        echo $_SESSION['birthdayUser'];
+                                    } else {
+                                        echo 'Il y a un problème';
+                                    }
+                                ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Equipe</b>
+                            </td>
+                            <td>
+                                <?php
+                                    if (isset($_SESSION['teamUser'])) {
+                                        echo $_SESSION['teamUser'];
+                                    } else {
+                                        echo 'Il y a un problème';
+                                    }
+                                ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Poste</b>
+                            </td>
+                            <td>
+                                <?php
+                                    if (isset($_SESSION['posteUser'])) {
+                                        echo $_SESSION['posteUser'];
+                                    } else {
+                                        echo 'Il y a un problème';
+                                    }
+                                ?>
+                            </td>
+                        </tr>
+                    </table>
                     
                 </article>
             </section>

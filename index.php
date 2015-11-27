@@ -14,7 +14,7 @@
         <link href="css/myConnexion.css" rel="stylesheet" type="text/css"/>
         <link href="css/myNav.css" rel="stylesheet" type="text/css"/>
         <link href="css/myFont.css" rel="stylesheet" type="text/css"/>
-        <link href="css/myProfil.css" rel="stylesheet" type="text/css"/>
+        <link href="css/myProfilInclude.css" rel="stylesheet" type="text/css"/>
         <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
         <script src="script.js"></script>
         <title>Hockey Stats - Bienvenue</title>
