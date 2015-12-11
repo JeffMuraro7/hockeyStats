@@ -43,7 +43,7 @@ and open the template in the editor.
             <section>
                 <article id="articleAPropos">
                     <h1>Statistiques</h1>
-                    <input type="button" value="Nouvel stats" onclick="" />
+                    <input type="button" value="Nouvel stats" onclick="location.href='addStats.php'" />
                 </article>
             </section>
             <aside>
